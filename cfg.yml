@@ -1,0 +1,14 @@
+
+depth: 3
+
+# captures: true
+captures: false
+
+# eps: true
+eps: false
+
+# castlings: true
+castlings: false
+
+# promotions: true
+promotions: false

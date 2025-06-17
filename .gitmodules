@@ -1,0 +1,3 @@
+[submodule "dragontoothmg"]
+	path = dragontoothmg
+	url = git@github.com:tissatussa/dragontoothmg.git

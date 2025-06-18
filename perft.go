@@ -3,7 +3,7 @@ package main
 import (
 	"strings"
 
-	"github.com/dylhunn/dragontoothmg"
+	"github.com/tissatussa/dragontoothmg"
 )
 
 func rtPerft(pBoard *dragontoothmg.Board, dp int, cfg CFG, currentDepth int, pStats *PerftStats) {

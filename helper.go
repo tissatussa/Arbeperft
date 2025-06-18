@@ -6,7 +6,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/dylhunn/dragontoothmg"
+	"github.com/tissatussa/dragontoothmg"
 )
 
 // Ternary : return integer

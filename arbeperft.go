@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/dylhunn/dragontoothmg"
+	"github.com/tissatussa/dragontoothmg"
 )
 
 // !!! struct field names must have Capital first letter

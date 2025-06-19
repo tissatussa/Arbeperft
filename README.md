@@ -194,7 +194,7 @@ $ gvm use go1.22
 
 ## Configuration files
 
-Arbeperft uses 2 config files : 'cfg.yml' for general settings and 'fen.yml' to set a FEN position, both should be in the same folder as the executable. Their format is YAML, a human-readable data serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted, see <a href="https://en.wikipedia.org/wiki/YAML"></a><br>
+Arbeperft uses 2 config files : 'cfg.yml' for general settings and 'fen.yml' to set a FEN position, both should be in the same folder as the executable. Their format is YAML, a human-readable data serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted, see <a href="https://en.wikipedia.org/wiki/YAML">https://en.wikipedia.org/wiki/YAML</a><br>
 Another commonly used format for config files is JSON, but i use YAML because those files can contain comment lines (starting with a '#' character), so you can easily disable alternative settings.
 
 Here are these 2 .yml files with my default content.<br>

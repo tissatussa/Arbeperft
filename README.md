@@ -21,12 +21,12 @@ This program is a debugging function to walk the chess move generation tree of s
 -------------------------------------------------------------
 ```
 
-All parameters are optional : when none given, default settings are used.<br>
+All arguments are optional : when none given, default settings are used.<br>
 Settings will be loaded by the configuration files, if they exist and have concerning values.<br>
-These Settings can be overruled by command arguments.
+These settings can be overruled by command arguments.
 
 Option 'z' is the fastest, it counts all leaf nodes of a certain depth, no other counts are done.<br>
-When a FEN is given by its (6) parameters, these should be the last on the command line.<br>
+When a FEN is given by its (6) arguments, these should be the last on the command line.<br>
 You can use the files 'fen.yml' and 'cfg.yml' (in same folder) to define custom settings - when these file(s) are missing, default settings are used.
 
 ### Depth: upto 9
@@ -36,7 +36,7 @@ You can use the files 'fen.yml' and 'cfg.yml' (in same folder) to define custom 
 May contain these characters, in any order:
 
 ```
-h: show only this Help message, all other options and parameters will be ignored.
+h: show only this Help message, all other options and arguments will be ignored.
 z: show just Perft counts, no other info : options x e c p will be ignored:
 x: count captures
 e: count En Passant captures (only when option x is also given)
@@ -60,9 +60,9 @@ FENh: Halfmove clock, eg. 0
 FENf: Fullmove number, eg. 1
 ```
 
-Omitting the FEN parameter(s) will set the FEN data pair (fen and description) in 'fen.yml' - if this config file is not found or it contains no FEN data pair, the starting position is loaded.
+Omitting the FEN argument(s) will set the FEN data pair (fen and description) in 'fen.yml' - if this config file is not found or it contains no FEN data pair, the starting position is loaded.
 
-When a parameter contains a "/" character, it's considered to be the 'FENp' part and the program expects all other 5 FEN parts to be present. No FEN validation is done, an invalid or incomplete FEN may result in an error or unexpected output.
+When a argument contains a "/" character, it's considered to be the 'FENp' part and the program expects all other 5 FEN parts to be present. No FEN validation is done, an invalid or incomplete FEN may result in an error or unexpected output.
 
 ### Examples:
 
@@ -194,7 +194,7 @@ $ gvm use go1.22
 
 ## Configuration files
 
-Arbeperft uses 2 config files : 'cfg.yml' for general settings and 'fen.yml' to set a FEN position, both should be in the same folder as the executable. Their format is YAML, a human-readable data serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted, see https://en.wikipedia.org/wiki/YAML<br>
+Arbeperft uses 2 config files : 'cfg.yml' for general settings and 'fen.yml' to set a FEN position, both should be in the same folder as the executable. Their format is YAML, a human-readable data serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted, see <a href="https://en.wikipedia.org/wiki/YAML"></a><br>
 Another commonly used format for config files is JSON, but i use YAML because those files can contain comment lines (starting with a '#' character), so you can easily disable alternative settings.
 
 Here are these 2 .yml files with my default content.<br>

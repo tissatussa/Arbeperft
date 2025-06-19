@@ -4,6 +4,7 @@
 Jump to:<br>
 - [Example output](#example-output)<br>
 - [How to compile](#how-to-compile)<br>
+- [Configuration files](#configuration-files)<br>
 - [Info on Perft](#info-on-perft)<br>
 - [My OS specifications](#my-os-specifications)
 
@@ -190,6 +191,38 @@ Installing and using a certain Go version is now easy:
 $ gvm install go1.22
 $ gvm use go1.22
 ```
+
+## Configuration files
+
+Arbeperft uses 2 config files : 'cfg.yml' for general settings and 'fen.yml' to set a FEN position, both should be in the same folder as the executable. Their format is YAML, a human-readable data serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted, see https://en.wikipedia.org/wiki/YAML<br>
+Another commonly used format for config files is JSON, but i use YAML because those files can contain comment lines (starting with a '#' character), so you can easily disable alternative settings.
+
+Here are these 2 .yml files with my default content.<br>
+These settings can be overruled by the options argument.
+
+**cfg.yml**
+
+```yml
+depth: 3
+captures: false
+eps: false
+castlings: false
+promotions: false
+```
+
+When the file 'cfg.yml' does not exist, the shown values are used.
+
+**fen.yml**
+
+```yml
+# fen: rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
+# desc: Standard Start position @@@ 1:20 @@@ 2:400 @@@ 3:8902 @@@ 4:197281
+
+fen: r3k2r/p1ppqpb1/bn2pnp1/3PN3/1p2P3/2N2Q1p/PPPBBPPP/R3K2R w KQkq - 0 1
+desc: Kiwipete @@@ 1:48 @@@ 2:2039 @@@ 3:97862 @@@ 4:4085603 @@@ 5:193690690
+```
+
+When the file 'fen.yml' does not exist, the standard starting position is loaded.
 
 ## Info on Perft
 
